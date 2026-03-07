@@ -115,14 +115,14 @@
 .navbar .navbar-nav .nav-link {
     padding: 10px 15px;
     font-size: 16px;
-    transition: .5s;
+    transition: .4s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: #2E7D32 !important; /* Changed to green */
+    color: orangered !important; /* Changed to green */
 }
 
 .navbar .dropdown-toggle::after {
@@ -147,7 +147,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .navbar .collapse.navbar-collapse .btn-hover-bg.btn {
         margin-bottom: 20px;
     }
