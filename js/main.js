@@ -81,6 +81,19 @@
         return false;
     });
 
+    // about section buttons to view more text
+    const ourstoryreadmorebtn = $('#ourstory'),
+    ourstorytext = $('#ourstorytext')
+    ourstoryreadmorebtn.on('click', function () {
+        if (ourstorytext.is(':visible')) {
+            ourstorytext.slideUp();
+            ourstoryreadmorebtn.text('Read More');
+        } else {
+            ourstorytext.slideDown();
+            ourstoryreadmorebtn.text('Read Less');
+        }
+    });
+
 
 })(jQuery);
 

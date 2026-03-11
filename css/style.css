@@ -115,14 +115,14 @@
 .navbar .navbar-nav .nav-link {
     padding: 10px 15px;
     font-size: 16px;
-    transition: .4s;
+    transition: .5s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: orangered !important; /* Changed to green */
+    color: #2E7D32 !important; /* Changed to green */
 }
 
 .navbar .dropdown-toggle::after {
@@ -147,7 +147,7 @@
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
     .navbar .collapse.navbar-collapse .btn-hover-bg.btn {
         margin-bottom: 20px;
     }
@@ -246,7 +246,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/breadcrumb-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/indeximpact.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,8 +257,9 @@
 /*** About Start ***/
 .about .tab-class .nav .nav-item a.active,
 .about .tab-class .nav .nav-item a.active span {
-    background: #2E7D32 !important; /* Changed to green */
+    background: indianred !important; /* Changed to green */
     color: var(--bs-white) !important;
+    border-radius: 20px
 }
 /*** About End ***/
 
