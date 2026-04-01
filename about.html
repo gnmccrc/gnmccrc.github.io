@@ -29,8 +29,12 @@
 </head>
 <style>
     .card .carousel-item img{
-    height:220px;
-    object-fit:cover;
+        height:220px;
+        object-fit:cover;
+        transition: all 0.3s ease;
+    }
+    .card .carousel-item img:hover{
+        transform: scale(1.08) translateY(-4px);
     }
     .bg-breadcrumb h3:hover{
         color: red !important;
@@ -38,6 +42,41 @@
     }
     .bg-breadcrumb{
         transition: transform 8s ease;;
+    }
+
+    .social-links a {
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover{
+        transform: translateY(-10px);
+    }
+
+    /* Facebook */
+    .social-links a.facebook:hover {
+        background-color: #1877f2;
+    }
+
+    /* Twitter */
+    .social-links a.twitter:hover {
+        background-color: #1da1f2;
+    }
+
+    /* Instagram */
+    .social-links a.instagram:hover {
+        background: radial-gradient(circle at 30% 107%, 
+            #fdf497 0%, #fd5949 45%, 
+            #d6249f 60%, #285AEB 90%);
+    }
+
+    /* Pinterest */
+    .social-links a.pinterest:hover {
+        background-color: #bd081c;
+    }
+
+    /* LinkedIn */
+    .social-links a.linkedin:hover {
+        background-color: #0077b5;
     }
 </style>
 
@@ -82,7 +121,7 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="ministries.html" class="nav-item nav-link">Ministries</a>
                         <a href="projects.html"class="nav-item nav-link">Projects</a>
                         <!-- <a href="events.html" class="nav-item nav-link">Events</a> -->
                         <!-- <div class="nav-item dropdown">
@@ -841,7 +880,7 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Quick Links</h4>
                         <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Our Services</a>
                         <a href="projects.html"><i class="fas fa-angle-right me-2"></i> Our Projects</a>
                         <!-- <a href="events.html"><i class="fas fa-angle-right me-2"></i> Events</a> -->
                         <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Latest News</a> -->
@@ -882,12 +921,12 @@
                     
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="d-flex align-items-center justify-content-center social-links">
+                       <a href="#" class="btn-hover-color btn-square text-white me-2 facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-0 linkedin"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center text-md-end text-body">

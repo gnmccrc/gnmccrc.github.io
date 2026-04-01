@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>Green Network - Our Services</title>
+    <title>G.N.M.C.C</title>
     <link rel="icon" href="img/logo.png">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
@@ -28,6 +27,72 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .card .carousel-item img{
+        height:220px;
+        object-fit:cover;
+        transition: all 0.3s ease;
+    }
+    .card .carousel-item img:hover{
+        transform: scale(1.08) translateY(-4px);
+    }
+    .bg-breadcrumb h3:hover{
+        color: red !important;
+        transition: 0.3s;
+    }
+    .bg-breadcrumb{
+        transition: transform 8s ease;;
+    }
+
+    .social-links a {
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover{
+        transform: translateY(-10px);
+    }
+
+    /* Facebook */
+    .social-links a.facebook:hover {
+        background-color: #1877f2;
+    }
+
+    /* Twitter */
+    .social-links a.twitter:hover {
+        background-color: #1da1f2;
+    }
+
+    /* Instagram */
+    .social-links a.instagram:hover {
+        background: radial-gradient(circle at 30% 107%, 
+            #fdf497 0%, #fd5949 45%, 
+            #d6249f 60%, #285AEB 90%);
+    }
+
+    /* Pinterest */
+    .social-links a.pinterest:hover {
+        background-color: #bd081c;
+    }
+
+    /* LinkedIn */
+    .social-links a.linkedin:hover {
+        background-color: #0077b5;
+    }
+
+    .carousel-item img{
+        transition: all 1s ease;
+    }
+
+    .carousel-item img {
+        height: 300px;      /* adjust: 200px–300px */
+        object-fit: cover;  /* prevents stretching */
+        border-radius: 10px;
+    }
+
+    .carousel-item:hover {
+        transform: scale(1.08);
+    }
+</style>
 
 <body>
 
@@ -40,37 +105,36 @@
     <!-- Navbar start -->
     <div class="container-fluid fixed-top px-0">
         <div class="container px-0">
-            <div class="topbar">
+           <div class="topbar">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-8">
                         <div class="topbar-info d-flex flex-wrap">
-                            <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>info@greennetworkkenya.org | greennetworkfoundation@gmail.com</a>
-                            <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+254 722329200</a>
+                            <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>gnmccrc1993@gmail.com | churchemail@gmail.com</a>
+                            <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+254722892169 | +254718835636</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="topbar-icon d-flex align-items-center justify-content-end">
-                            <a href="#" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://facebook.com/Peter Mosabi Kihingu" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
                             <a href="#" class="btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-light bg-light navbar-expand-xl">
-                <a href="index.html" class="navbar-brand ms-3">
-                    <h1 class="display-5 text-success">Green Network</h1>
+            <nav class="navbar navbar-expand-xl navbar-dark bg-dark shadow-sm">
+                <a href="index.html" class="navbar-brand ms-3 d-flex align-items-center ">
+                    <img src="img/logo.png" alt="GNMCC Logo" style="height:50px;"> G.N.M.C.C
                 </a>
                 <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+                    <span class="fa fa-bars "></span>
                 </button>
-                <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
+                <div class="collapse navbar-collapse bg-primary" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="ministries.html" class="nav-item nav-link active">Ministries</a>
                         <a href="projects.html"class="nav-item nav-link">Projects</a>
                         <!-- <a href="events.html" class="nav-item nav-link">Events</a> -->
                         <!-- <div class="nav-item dropdown">
@@ -94,87 +158,87 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
         <div class="container text-center py-5" style="max-width: 900px;">
-            <h3 class="text-white display-3 mb-4">Our Services</h1>
-            <p class="fs-5 text-white mb-4">Improving livelihoods through sustainable development and climate change action</p>
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-white">Services</li>
-            </ol>    
+            <h3 class="text-white display-3 mb-4">Our Ministries</h1>
+                <p class="fs-5 text-white mb-4">
+                    Serving God and our community through impactful ministries that nurture transform lives
+                </p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Ministries</li>
+                </ol>
         </div>
     </div>
     <!-- Header End -->
 
-    <!-- Services Introduction Start -->
-    <div class="container-fluid py-5">
+    <!-- Ministry Focus Areas Introduction Start -->
+   <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                <h5 class="text-uppercase text-primary">Thematic Areas</h5>
-                <h1 class="mb-4">What We Do</h1>
-                <p class="mb-0">The Green Network Foundation implements projects under these thematic areas: Water, Sanitation and Hygiene, Sustainable Livelihoods, Environment and Climatic Change, Food Security and Nutrition, and Advocacy on Rights Issues.</p>
+                <h5 class="text-uppercase text-primary">Our Ministries</h5>
+                <h1 class="mb-4">Ministry Focus Areas</h1>
+                <p class="mb-0">
+                    We carry out our mission through various ministries that focus on spiritual growth,
+                    outreach, discipleship, and community transformation.
+                </p>
             </div>
         </div>
     </div>
-    <!-- Services Introduction End -->
+    <!-- Ministry Focus Areas Introduction End -->
 
-    <!-- Water, Sanitation and Hygiene Services Start -->
-    <div class="container-fluid service py-5 bg-light">
+    <!-- Evangelism & Outreach -->
+    <div class="container-fluid service py-5 bg-light" id="evangelism">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                <h5 class="text-uppercase text-primary">Thematic Area 1</h5>
-                <h1 class="mb-4">Water, Sanitation and Hygiene</h1>
-                <p class="mb-0">Water and sanitation issues are critical for public health and socioeconomic development. Safe drinking water and proper sanitation prevent waterborne diseases and improve overall wellbeing.</p>
+                <h5 class="text-uppercase text-primary">Ministry Area 1</h5>
+                <h1 class="mb-4">Evangelism & Outreach</h1>
+                <p class="mb-0">
+                    Sharing the Gospel and reaching out to communities through crusades,
+                    missions, and evangelistic programs.
+                </p>
             </div>
+
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <img src="img/service-1.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="service-link">
-                            <a href="#" class="h4 mb-0">Access to Safe Drinking Water</a>
+                <div id="ministryCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="img/evangelismministry1.png" class="d-block w-100" alt="Evangelism">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 style="color:aqua; background-color: black;  max-width: fit-content;">Evangelism Crusade</h2>
+                                <p style="background-color: #fd5949;  max-width: fit-content;">Bishop Peter Mosabi Ministering in Litein Kabaranet.</p>
+                            </div>
                         </div>
-                    </div>
-                    <p class="my-4">Contaminated water sources can lead to serious health risks. We improve access to clean drinking water to prevent waterborne diseases and promote public health.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="service-link">
-                            <a href="#" class="h4 mb-0">Basic Sanitation Facilities</a>
+
+                        <div class="carousel-item">
+                            <img src="img/evangelismministry2.png" class="d-block w-100" alt="Community Outreach">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 style="color:aqua; background-color: black; max-width: fit-content;">Evangelism Crusade</h2>
+                                <p style="background-color: #fd5949;  max-width: fit-content;">Bishop Peter Mosabi Ministering in Butere Western Kenya.</p>
+                            </div>
                         </div>
-                    </div>
-                    <p class="my-4">Proper sanitation facilities prevent pathogen spread and protect water resources from pollution. We combat open defecation and reduce disease transmission.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <img src="img/service-3.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="service-link">
-                            <a href="#" class="h4 mb-0">Hygiene Promotion</a>
+
+                        <div class="carousel-item">
+                            <img src="img/evangelismoutreach1.png" class="d-block w-100" alt="Door to Door">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 style="color:#fd5949;  max-width: fit-content;">Door-to-Door Evangelism</h2>
+                                <p style=" max-width: fit-content;">Sharing the message of salvation personally.</p>
+                            </div>
                         </div>
+
                     </div>
-                    <p class="my-4">We promote good hygiene practices, such as handwashing with soap and water, to prevent the spread of germs and infections in communities.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <img src="img/service-4.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="service-link">
-                            <a href="#" class="h4 mb-0">Sustainable Water Management</a>
-                        </div>
-                    </div>
-                    <p class="my-4">Construction of dams and water pans, protection of water towers, river banks and water bodies. Building capacity for water quality improvement.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <img src="img/service-1.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="service-link">
-                            <a href="#" class="h4 mb-0">Water Efficiency Campaigns</a>
-                        </div>
-                    </div>
-                    <p class="my-4">Awareness campaigns to promote water efficiency measures and the human right to water and sanitation as recognized by the UN in 2010.</p>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ministryCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-next" type="button" data-bs-target="#ministryCarousel" data-bs-slide="next">
+
                 </div>
             </div>
         </div>
     </div>
-    <!-- Water, Sanitation and Hygiene Services End -->
+    <!-- Evangelism & Outreach End -->
 
     <!-- Environment and Climatic Change Services Start -->
     <div class="container-fluid service py-5">
@@ -546,7 +610,7 @@
                         <h4 class="mb-4 text-white">Quick Links</h4>
                         <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
                         <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Our Services</a>
                         <a href="projects.html"><i class="fas fa-angle-right me-2"></i> Our Projects</a>
                         <!-- <a href="events.html"><i class="fas fa-angle-right me-2"></i> Events</a> -->
                         <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
@@ -555,11 +619,11 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Our Thematic Areas</h4>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Water, Sanitation & Hygiene</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Sustainable Livelihoods</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Environment & Climate Change</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Food Security & Nutrition</a>
-                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Advocacy on Rights Issues</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Water, Sanitation & Hygiene</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Sustainable Livelihoods</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Environment & Climate Change</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Food Security & Nutrition</a>
+                        <a href="ministries.html"><i class="fas fa-angle-right me-2"></i> Advocacy on Rights Issues</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
@@ -615,6 +679,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- carousel script -->
+    <script>
+        $('.carousel').carousel({
+            interval: 1000
+        })
+    </script>
 
 </body>
 
