@@ -92,6 +92,36 @@
     .carousel-item:hover {
         transform: scale(1.08);
     }
+
+    /* Base caption (desktop) */
+    .custom-caption {
+        background: rgba(0,0,0,0.5);
+        padding: 10px 15px;
+        border-radius: 8px;
+        bottom: 20px;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+        .custom-caption {
+            position: static;           /* remove overlay */
+            background: transparent;    /* cleaner look */
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .custom-caption h2 {
+            font-size: 16px;
+            color: #000;
+            background: none;
+        }
+
+        .custom-caption p {
+            font-size: 14px;
+            color: #555;
+            background: none;
+        }
+    }
 </style>
 
 <body>
@@ -205,7 +235,7 @@
 
                         <div class="carousel-item active">
                             <img src="img/evangelismministry1.png" class="d-block w-100" loading="lazy" alt="Evangelism">
-                            <div class="carousel-caption">
+                            <div class="carousel-caption customcaption">
                                 <h2 style="color:aqua; background-color: black;  max-width: fit-content;">Evangelism Crusade</h2>
                                 <p style="background-color: #fd5949;  max-width: fit-content;">Bishop Peter Mosabi Ministering in Litein Kabaranet.</p>
                             </div>
@@ -213,7 +243,7 @@
 
                         <div class="carousel-item">
                             <img src="img/evangelismministry2.png" loading="lazy" class="d-block w-100" alt="Community Outreach">
-                            <div class="carousel-caption">
+                            <div class="carousel-caption customcaption">
                                 <h2 style="color:aqua; background-color: black; max-width: fit-content;">Evangelism Crusade</h2>
                                 <p style="background-color: #fd5949;  max-width: fit-content;">Bishop Peter Mosabi Ministering in Butere Western Kenya.</p>
                             </div>
@@ -221,7 +251,7 @@
 
                         <div class="carousel-item">
                             <img src="img/evangelismoutreach1.png" class="d-block w-100" loading="lazy" alt="Door to Door">
-                            <div class="carousel-caption">
+                            <div class="carousel-caption custom-caption">
                                 <h2 style="color:#fd5949;  max-width: fit-content;">Door-to-Door Evangelism</h2>
                                 <p style=" max-width: fit-content;">Sharing the message of salvation personally.</p>
                             </div>
