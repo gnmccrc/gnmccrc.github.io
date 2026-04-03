@@ -84,9 +84,10 @@
     }
 
     .carousel-item img {
-        height: 300px;      /* adjust: 200px–300px */
-        object-fit: cover;  /* prevents stretching */
+        height: 450px;      /* adjust: 200px–300px */
+        object-fit: contain;  /* prevents stretching */
         border-radius: 10px;
+        width: 100%;
     }
 
     .carousel-item:hover {
@@ -94,12 +95,19 @@
     }
 
     /* Base caption (desktop) */
-    /* .custom-caption {
+    .custom-caption {
         background: rgba(0,0,0,0.5);
         padding: 10px 15px;
+        position: center;
+        margin-left: 140px;
         border-radius: 8px;
         bottom: 20px;
-    } */
+        max-width: fit-content;
+        color: orange
+    }
+    .custom-caption h2{
+        color: aqua
+    }
 
     /* Mobile optimization */
     @media (max-width: 768px) {
