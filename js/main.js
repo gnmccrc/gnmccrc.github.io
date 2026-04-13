@@ -23,11 +23,11 @@
 
 
     // Donation
-    $('.progress').waypoint(function () {
-        $('.progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+    // $('.progress').waypoint(function () {
+    //     $('.progress-bar').each(function () {
+    //         $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    //     });
+    // }, {offset: '80%'});
 
 
     // Facts counter
