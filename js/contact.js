@@ -60,10 +60,20 @@ $(document).ready(function(){
                     message 
                 },
                 (data)=>{
+                function isJSON(str) {
+                    try {
+                        return (JSON.parse(str) && !!str);
+                    } catch (e) {
+                        return false;
+                    }
+                }
+
                     if(isJSON(data)){
                         data = JSON.parse(data)
-                        if(data.status == 'success'){
+                        if(data.status === 'success'){
                             notifications.html(showAlert('success', `Your Information Has Been Received Successfully!`))
+                        }else if(data.status == "exists"){
+                            notifications.html(showAlert('info', `Your Information Already Exists`))
                         }
                     }else{
                         notifications.html(showAlert('danger', `Sorry :( There was a Problem processing your Data + ${data}`))
