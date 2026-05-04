@@ -28,6 +28,58 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .card .carousel-item img{
+        height:220px;
+        object-fit:cover;
+        transition: all 0.3s ease;
+    }
+    .card .carousel-item img:hover{
+        transform: scale(1.08) translateY(-4px);
+    }
+    .bg-breadcrumb h3:hover{
+        color: red !important;
+        transition: 0.3s;
+    }
+    .bg-breadcrumb{
+        transition: transform 8s ease;;
+    }
+
+    .social-links a {
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover{
+        transform: translateY(-10px);
+    }
+
+    /* Facebook */
+    .social-links a.facebook:hover {
+        background-color: #1877f2;
+    }
+
+    /* Twitter */
+    .social-links a.twitter:hover {
+        background-color: #1da1f2;
+    }
+
+    /* Instagram */
+    .social-links a.instagram:hover {
+        background: radial-gradient(circle at 30% 107%, 
+            #fdf497 0%, #fd5949 45%, 
+            #d6249f 60%, #285AEB 90%);
+    }
+
+    /* Pinterest */
+    .social-links a.pinterest:hover {
+        background-color: #bd081c;
+    }
+
+    /* LinkedIn */
+    .social-links a.linkedin:hover {
+        background-color: #0077b5;
+    }
+</style>
 
 <body>
 
@@ -105,10 +157,10 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">WELCOME TO</h4>
                             <h3 class="display-1 text-capitalize text-white mb-4">Good News Mission Community Church & Rehabilitation Centers</h3>
-                            <p class="mb-5 fs-5">We are Glad You Are Here!
+                            <p class="mb-5 fs-5"> Preaching the Gospel. Transforming Lives. Serving Communities.
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Join With Us</a>
+                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Partner With Us</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +174,7 @@
                             <p class="mb-5 fs-5">Equipping communities with faith, guidance and support for spiritual growth and meaningful living.
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Join With Us</a>
+                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Partner With Us</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +188,7 @@
                             <p class="mb-5 fs-5">Ministering Across Kenya.
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Join With Us</a>
+                                <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="about.html">Partner With Us</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +218,7 @@
                 <div class="col-xl-7">
                     <h5 class="text-uppercase ">About Us</h5>
                     <h1 class="mb-4">Good News Mission Community Church & Rehabilitation Centres (G.N.M.C.C.)</h1>
-                    <p class="fs-5 mb-4">G.N.M.C.C. is an evangelical ministry devoted to the proclamation of the Gospel of our Lord Jesus Christ and the spiritual transformation of lives through faith, discipleship and compassionate services .
+                    <p class="fs-5 mb-4">G.N.M.C.C. is an evangelical ministry devoted to the proclamation of the Gospel of our Lord Jesus Christ and the spiritual transformation of lives through faith, discipleship and compassionate service.
                     </p>
                     <div class="tab-class bg-secondary p-4">
                         <ul class="nav nav-pills d-flex mb-2">
@@ -193,7 +245,7 @@
                                         <div class="d-flex">
                                             <div class="text-start my-auto">
                                                 <h5 class="text-uppercase mb-3">WHO WE ARE</h5>
-                                                <p class="mb-4">Registered in 1993 as a Pentecostal Church in Kenya under the Societies Act of Kenya and issued a certificate of Registration(Societies Act). The focus of the church is to target all people across Kenya and Outside with the word of God.
+                                                <p class="mb-4">Registered in 1993 as a Pentecostal Church in Kenya under the Societies Act of Kenya and issued a certificate of Registration(Societies Act). The focus of the church is to reach people across Kenya and beyond with the Word of God.
                                                 </p>
                                                 <p class="mb-4"><strong>Geographical Operations:</strong>G.N.M.C.C has branch churches in Nairobi, Isiolo, Eldoret, Machakos, Nakuru, Kisii, Narok, Kericho, Mabera, Migori, Kehancha, Ntimaru Kenya.</p>
                                                 <!-- <p class="mb-4"><strong>Non-Discrimination Policy:</strong> No one will be discriminated against on the basis of HIV/AIDS status, Gender, Religion, Age or Race.</p> -->
@@ -627,12 +679,12 @@
                     
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
-                        <a href="#" class="btn-hover-color btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="d-flex align-items-center justify-content-center social-links">
+                       <a href="#" class="btn-hover-color btn-square text-white me-2 facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2 pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-0 linkedin"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center text-md-end text-body">
