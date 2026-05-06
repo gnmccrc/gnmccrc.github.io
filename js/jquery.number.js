@@ -5,7 +5,7 @@
  * http://opensource.teamdf.com/license/
  *
  * A jQuery plugin which implements a permutation of phpjs.org's number_format to provide
- * simple number formatting, insertion, and as-you-type masking of a number.
+ * simple number formatting, insertionand as-you-type masking of a number.
  *
  * @author	Sam Sehnert
  * @docs	http://www.teamdf.com/web/jquery-number-format-redux/196/
@@ -135,7 +135,7 @@
 	 */
 	$.fn.number = function( number, decimals, dec_point, thousands_sep ){
 
-		// Enter the default thousands separator, and the decimal placeholder.
+		// Enter the default thousands separatorand the decimal placeholder.
 		thousands_sep	= (typeof thousands_sep === 'undefined') ? ',' : thousands_sep;
 		dec_point		= (typeof dec_point === 'undefined') ? '.' : dec_point;
 		decimals		= (typeof decimals === 'undefined' ) ? 0 : decimals;
@@ -146,7 +146,7 @@
 			regex_dec		= new RegExp(u_dec,'g');
 
 		// If we've specified to take the number from the target element,
-		// we loop over the collection, and get the number.
+		// we loop over the collectionand get the number.
 		if( number === true )
 		{
 			// If this element is a number, then we add a keyup
@@ -315,7 +315,7 @@
 							e.preventDefault();
 						}
 
-						// If hitting the delete key, and the cursor is before a decimal place,
+						// If hitting the delete keyand the cursor is before a decimal place,
 						// we simply move the cursor to the other side of the decimal place.
 						else if( decimals > 0 && code == 127 && start == this.value.length-decimals-1 )
 						{
@@ -323,7 +323,7 @@
 							e.preventDefault();
 						}
 
-						// If hitting the backspace key, and the cursor is behind a decimal place,
+						// If hitting the backspace keyand the cursor is behind a decimal place,
 						// we simply move the cursor to the other side of the decimal place.
 						else if( decimals > 0 && code == 8 && start == this.value.length-decimals )
 						{
@@ -334,7 +334,7 @@
 							setPos = this.value.length+data.c;
 						}
 
-						// If hitting the delete key, and the cursor is to the right of the decimal
+						// If hitting the delete keyand the cursor is to the right of the decimal
 						// we replace the character after the caret with a 0.
 						else if( decimals > 0 && code == 127 && start > this.value.length-decimals-1 )
 						{
@@ -357,7 +357,7 @@
 							setPos = this.value.length+data.c;
 						}
 
-						// If hitting the backspace key, and the cursor is to the right of the decimal
+						// If hitting the backspace keyand the cursor is to the right of the decimal
 						// (but not directly to the right) we replace the character preceding the
 						// caret with a 0.
 						else if( decimals > 0 && code == 8 && start > this.value.length-decimals )
@@ -382,7 +382,7 @@
 							setPos = this.value.length+data.c;
 						}
 
-						// If the delete key was pressed, and the character immediately
+						// If the delete key was pressedand the character immediately
 						// after the caret is a thousands_separator character, simply
 						// step over it.
 						else if( code == 127 && this.value.slice(start, start+1) == thousands_sep )
@@ -391,7 +391,7 @@
 							e.preventDefault();
 						}
 
-						// If the backspace key was pressed, and the character immediately
+						// If the backspace key was pressedand the character immediately
 						// before the caret is a thousands_separator character, simply
 						// step over it.
 						else if( code == 8 && this.value.slice(start-1, start) == thousands_sep )
@@ -403,7 +403,7 @@
 							setPos = this.value.length+data.c;
 						}
 
-						// If the caret is to the right of the decimal place, and the user is entering a
+						// If the caret is to the right of the decimal placeand the user is entering a
 						// number, remove the following character before putting in the new one.
 						else if(
 							decimals > 0 &&
@@ -497,7 +497,7 @@
 							}
 
 							// Increase the cursor position if the caret is to the right
-							// of the decimal place, and the character pressed isn't the backspace key.
+							// of the decimal placeand the character pressed isn't the backspace key.
 							else if( start > this.value.length-decimals && code != 8 )
 							{
 								data.c++;
@@ -592,7 +592,7 @@
 	// Create .val() hooks to get and set formatted numbers in inputs.
 	//
 
-	// We check if any hooks already exist, and cache
+	// We check if any hooks already existand cache
 	// them in case we need to re-use them later on.
 	var origHookGet = null, origHookSet = null;
 
@@ -622,7 +622,7 @@
 	*/
 	$.valHooks.text.get = function( el ){
 
-		// Get the element, and its data.
+		// Get the elementand its data.
 		var $this	= $(el), num, negative,
 			data	= $this.data('numFormat');
 
@@ -644,7 +644,7 @@
 		}
 		else
 		{
-			// Remove formatting, and return as number.
+			// Remove formattingand return as number.
 			if( el.value === '' ) return '';
 
 
@@ -673,7 +673,7 @@
 	*/
 	$.valHooks.text.set = function( el, val )
 	{
-		// Get the element, and its data.
+		// Get the elementand its data.
 		var $this	= $(el),
 			data	= $this.data('numFormat');
 

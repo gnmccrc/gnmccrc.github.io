@@ -1301,8 +1301,8 @@ $.widget("ui.draggable", $.ui.mouse, {
 
 		// This is a special case where we need to modify a offset calculated on start, since the following happened:
 		// 1. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
-		// 2. The actual offset parent is a child of the scroll parent, and the scroll parent isn't the document, which means that
-		//    the scroll is included in the initial calculation of the offset of the parent, and never recalculated upon drag
+		// 2. The actual offset parent is a child of the scroll parentand the scroll parent isn't the document, which means that
+		//    the scroll is included in the initial calculation of the offset of the parentand never recalculated upon drag
 		if(this.cssPosition == 'absolute' && this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) {
 			po.left += this.scrollParent.scrollLeft();
 			po.top += this.scrollParent.scrollTop();
@@ -1527,7 +1527,7 @@ $.ui.plugin.add("draggable", "connectToSortable", {
 				inst.cancelHelperRemoval = true; //Don't remove the helper in the draggable instance
 				this.instance.cancelHelperRemoval = false; //Remove it in the sortable instance (so sortable plugins like revert still work)
 
-				//The sortable revert is supported, and we have to set a temporary dropped variable on the draggable to support revert: 'valid/invalid'
+				//The sortable revert is supportedand we have to set a temporary dropped variable on the draggable to support revert: 'valid/invalid'
 				if(this.shouldRevert) this.instance.options.revert = true;
 
 				//Trigger the stop of the sortable
@@ -1591,7 +1591,7 @@ $.ui.plugin.add("draggable", "connectToSortable", {
 					this.instance.isOver = 1;
 					//Now we fake the start of dragging for the sortable instance,
 					//by cloning the list group item, appending it to the sortable and using it as inst.currentItem
-					//We can then fire the start event of the sortable with our passed browser event, and our own helper (so it doesn't create a new one)
+					//We can then fire the start event of the sortable with our passed browser eventand our own helper (so it doesn't create a new one)
 					this.instance.currentItem = $(that).clone().removeAttr('id').appendTo(this.instance.element).data("sortable-item", true);
 					this.instance.options._helper = this.instance.options.helper; //Store helper option to later restore it
 					this.instance.options.helper = function() { return ui.helper[0]; };
@@ -1619,7 +1619,7 @@ $.ui.plugin.add("draggable", "connectToSortable", {
 
 			} else {
 
-				//If it doesn't intersect with the sortable, and it intersected before,
+				//If it doesn't intersect with the sortableand it intersected before,
 				//we fake the drag stop of the sortable, but make sure it doesn't remove the helper by using cancelHelperRemoval
 				if(this.instance.isOver) {
 
@@ -1635,7 +1635,7 @@ $.ui.plugin.add("draggable", "connectToSortable", {
 					this.instance._mouseStop(event, true);
 					this.instance.options.helper = this.instance.options._helper;
 
-					//Now we remove our currentItem, the list group clone again, and the placeholder, and animate the helper back to it's original size
+					//Now we remove our currentItem, the list group clone againand the placeholderand animate the helper back to it's original size
 					this.instance.currentItem.remove();
 					if(this.instance.placeholder) this.instance.placeholder.remove();
 
@@ -2719,7 +2719,7 @@ $.ui.plugin.add("resizable", "animate", {
 
 					if (pr && pr.length) $(pr[0]).css({ width: data.width, height: data.height });
 
-					// propagating resize, and updating values for each animation step
+					// propagating resizeand updating values for each animation step
 					that._updateCache(data);
 					that._propagate("resize", event);
 
@@ -3950,8 +3950,8 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 		// This is a special case where we need to modify a offset calculated on start, since the following happened:
 		// 1. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
-		// 2. The actual offset parent is a child of the scroll parent, and the scroll parent isn't the document, which means that
-		//    the scroll is included in the initial calculation of the offset of the parent, and never recalculated upon drag
+		// 2. The actual offset parent is a child of the scroll parentand the scroll parent isn't the document, which means that
+		//    the scroll is included in the initial calculation of the offset of the parentand never recalculated upon drag
 		if(this.cssPosition == 'absolute' && this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) {
 			po.left += this.scrollParent.scrollLeft();
 			po.top += this.scrollParent.scrollTop();
@@ -4110,7 +4110,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		//Various things done here to improve the performance:
 		// 1. we create a setTimeout, that calls refreshPositions
 		// 2. on the instance, we have a counter variable, that get's higher after every append
-		// 3. on the local scope, we copy the counter variable, and check in the timeout, if it's still the same
+		// 3. on the local scope, we copy the counter variableand check in the timeout, if it's still the same
 		// 4. this lets only the last addition to the timeout stack through
 		this.counter = this.counter ? ++this.counter : 1;
 		var counter = this.counter;
@@ -4490,7 +4490,7 @@ color.fn = jQuery.extend( color.prototype, {
 					var cache = space.cache;
 					each( space.props, function( key, prop ) {
 
-						// if the cache doesn't exist, and we know how to convert
+						// if the cache doesn't existand we know how to convert
 						if ( !inst[ cache ] && space.to ) {
 
 							// if the value was null, we don't need to copy it
@@ -6171,7 +6171,7 @@ if ( $.uiBackCompat !== false ) {
 	}( jQuery, jQuery.ui.accordion.prototype ) );
 
 	// animated option
-	// NOTE: this only provides support for "slide", "bounceslide", and easings
+	// NOTE: this only provides support for "slide", "bounceslide"and easings
 	// not the full $.ui.accordion.animations API
 	(function( $, prototype ) {
 		$.extend( prototype.options, {
