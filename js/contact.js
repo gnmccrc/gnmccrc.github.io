@@ -33,7 +33,7 @@ $(document).ready(function(){
             errors = 'Please Enter Your First Name'
             firstnamefield.focus()
         }else if(email == ""){
-            errors = 'Please Enter Your Email'
+            errors = 'Please Enter your Email'
             emailfield.focus()
         }else if(mobile == ""){
             errors = 'Please Enter Your Phone'
